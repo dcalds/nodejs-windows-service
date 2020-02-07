@@ -1,0 +1,14 @@
+_http_outgoing.js:485
+    throw new ERR_HTTP_HEADERS_SENT('set');
+    ^
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:485:11)
+    at ServerResponse.header (C:\wservice2\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\wservice2\node_modules\express\lib\response.js:170:12)
+    at C:\wservice2\script\watch.js:27:24
+    at C:\wservice2\node_modules\fs-extra\lib\move\move.js:48:22
+    at CB (C:\wservice2\node_modules\graceful-fs\polyfills.js:112:17)
+    at FSReqCallback.oncomplete (fs.js:146:23) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
